@@ -1,0 +1,17 @@
+body {
+  background-color: lightgrey;
+}
+canvas {
+  width: 100%;
+  height: auto;
+}
+div.form-row {
+  line-height: 38px;
+  font-weight: bold;
+}
+h3 {
+  margin-bottom: 20px;
+}
+div.row {
+  margin-top: 10px;
+}

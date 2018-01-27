@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="graph.css">
+  </head>
+  <body onload="initGraph()">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <canvas id="canvas" width="800" height="400"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3>Rysuj funkcję liniową:</h3>
+          <div class="form-row ">
+          <input class="form-control col" type="number" id="linear_a">
+           &nbsp;x +&nbsp;
+            <input class="form-control col" type="number" id="linear_b">
+            &nbsp;
+          <button type="button" class="btn btn-dark col" onclick="drawLinear()">Rysuj</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Rysuj funkcję kwadratową:</h3>
+          <div class="form-row ">
+            <input class="form-control col" type="number" id="quad_a">
+            &nbsp;x<sup>2</sup> +&nbsp;
+            <input class="form-control col" type="number" id="quad_b"> &nbsp;x&nbsp;
+            &nbsp;+&nbsp;
+            <input class="form-control col" type="number" id="quad_c">&nbsp;
+            <button type="button" class="btn btn-dark col" onclick="drawQuad()">Rysuj</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+      <div class="col-md-2 offset-md-5">
+        <button type="button" class="btn btn-dark col" onclick="resetCanvas()">Wyczyść płótno</button>
+      </div>
+    </div>
+    </div>
+    <script src="graph.js">
+    </script>
+  </body>
+</html>
